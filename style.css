@@ -1,0 +1,172 @@
+body{
+    
+
+    background-image:linear-gradient(to right, #7c1212, #7c1250);
+    margin:0;
+    padding: 0;
+    text-align: center;
+    margin-top: 40px;
+    color: #fff;
+    font-family: helvetica;
+    
+}
+/*
+h1{
+    color: #7c1250;
+}
+*/
+
+#tasks-conteiner{
+
+    width:500px;
+    margin: auto;
+    margin-top:20px;
+}
+.tasks-header form{
+    position: relative;
+}
+.tasks-header input{
+    box-sizing: border-box;
+    padding: 20px;
+    width: 100%;
+    font-size: 15px;
+    color:#34073D;
+    border: solid 1px #34073D;
+    outline: none;
+    background-color: #fff;
+
+    
+
+}
+
+.tasks-header input::placeholder{
+    color: #34073D;
+    font-size:20px;
+}
+.tasks-header button{
+
+    position: absolute;
+    height: 59px;
+    width: 50px;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    border: solid 1px #34073D;
+    transition: .3s;
+    cursor: pointer;
+
+
+}
+.tasks-header button:hover{
+
+    background-color: #34073D;
+    border: solid 2px #fff;
+    color: #fff;
+    
+}
+#add-btn{
+
+    margin-top: 3px;
+    font-size: 20px;
+}
+#tasks-list{
+
+    list-style: none;
+    padding-left: 0;
+}
+#tasks-list li{
+
+    background-color: #fff;
+    color: #34073D;
+    padding-left: 15px;
+    height: 50px;
+    line-height: 50px;
+    margin: solid 3px #34073D;
+    transition: .5s;
+    margin-bottom: 10px;
+    text-align: left;
+    font-size: 18px;
+    font-weight: bolder;
+    position: relative;
+
+}
+#tasks-list li span{
+    font-size: 20px;
+}
+#tasks-list li ion-icon{
+
+    position: absolute;
+    top: 0;
+    height: 40px;
+    width: 30px;
+    transition: .5s;
+    cursor: pointer;
+    padding: 5px;
+    
+}
+#check-btn{
+    right: 40px;
+    
+}
+#check-btn:hover{
+    color: #fff;
+    background-color: #09E01B;
+}
+#remove-btn{
+    right:0px;
+}
+#remove-btn:hover{
+    color: #fff;
+    background-color: #e61313;
+}
+.hide{
+    display: none;
+
+}
+#tasks-list li.done{
+    color: #fff;
+    background-color: #34073D;
+    text-decoration: line-through;
+}
+
+@media(max-width:600px){
+
+    h1{
+        font-size: 20px;
+    }
+    #tasks-conteiner{
+
+        width: 300px;
+    }
+    .tasks-header input{
+
+        padding: 10px;
+    }
+    .tasks-header button{
+
+        height: 39px;
+    }
+    #tasks-list li{
+
+        height: 40px;
+        line-height: 40px;
+
+
+    }
+
+    #tasks-list li ion-icon {
+       
+        top: 6px;
+        height: 20px;
+        width: 30px;
+        
+        
+    }
+    #tasks-list li span {
+        font-size: 16px;
+    }
+    .tasks-header input::placeholder{
+        color: #34073D;
+        font-size:16px;
+    }
+}

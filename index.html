@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lista de tarefas JS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="tasks-conteiner">
+
+        <div class="tasks-header">
+            <h1>Salve sua proxima tarefa:</h1>
+
+            <form action="">
+                
+                <input type="text" name="" id="task-title" placeholder="Qual sua proxima tarefa?">
+                <button id="task-btn"type="submit">
+
+                    <ion-icon id="add-btn" name="add"></ion-icon>
+                    
+                </button>
+                
+
+
+            </form>
+        </div>
+        <div id="tasks-list-conteiner">
+
+            <h1>Estas são suas tarefa:</h1>
+            <ul id="tasks-list">
+                <li class="task-box templete hide">
+                    <span class="task-title1">test</span>
+                    <ion-icon id="remove-btn" name="close"></ion-icon>
+                    <ion-icon id="check-btn" name="checkmark"></ion-icon>
+                   
+                </li>
+                
+
+            </ul>
+
+        </div>
+        
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="/index.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule="" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
